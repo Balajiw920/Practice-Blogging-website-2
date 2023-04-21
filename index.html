@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="three-d-color">BLOGGING WAY</h1>
+    </header>
+    <main>
+      <section>
+        <button class="create-post-btn three-d-color">Create New Post</button>
+      </section>
+    </main>
+
+    <div class="background">
+        <div class="illusion"></div>
+      </div>
+
+    <script src="script.js">
+
+
+window.addEventListener('resize', function(){
+  var bg = document.querySelector('.background');
+  bg.style.height = window.innerHeight + 'px';
+  bg.style.width = window.innerWidth + 'px';
+});
+
+
+
+    </script>
+  </body>
+</html>

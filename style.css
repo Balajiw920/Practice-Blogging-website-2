@@ -1,0 +1,199 @@
+body {
+    /* background-image: url(https://cdn3.vectorstock.com/i/1000x1000/35/77/blogging-concept-on-blue-background-laptop-vector-19883577.jpg); */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-size:auto;
+  }
+  
+  header {
+    background-color: #008CBA;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+  }
+  
+  header:hover::before {
+    transform: rotate(45deg) translate(150%, 150%);
+  }
+  
+  .three-d-color {
+    background: linear-gradient(to bottom, #ff9900 0%, #ff6600 50%, #ff3300 100%);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+  }
+  
+  .three-d-color:hover {
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin: 20px 0;
+  }
+  
+  article {
+    background-color: #247692;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .article:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+  }
+  
+  
+  .edit-title {
+    width: 100%;
+  }
+  
+  .edit-content {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .edit-btn,
+  .save-btn,
+  .delete-btn {
+    margin-right: 10px;
+  }
+  
+  .create-post-btn {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .create-post-btn:hover {
+    background-color: #005A6E;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .create-post-btn:active {
+
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+  
+  
+  .bounce-animation {
+      background-color: rgb(39, 158, 114);
+      color: rgb(3, 3, 3);
+      animation: pulse 1s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+ 
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background: #212121;
+      }
+      
+      .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+      
+      .illusion {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, #e74c3c 0%, #3498db 50%, #922fb9 100%);
+        animation: rotate 5s linear infinite;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+
+
+
+
+
+
+    
